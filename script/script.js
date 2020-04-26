@@ -28,8 +28,8 @@ setInterval(() => {
 
 ////////////siding pages/////////////////////
 
-const slider = document.querySelector('.slider')
-const slideDown = document.querySelector('.slide-down')
+const slider = document.querySelector(".slider");
+const slideDown = document.querySelector(".slide-down");
 
 const buttons = [
   document.querySelector(".home"),
@@ -40,49 +40,46 @@ const buttons = [
   document.querySelector(".contact")
 ];
 
-
-buttons[0].addEventListener('click',function (e) {
-  slider.setAttribute('style', `--pageSlide: ${00}%`)
+buttons[0].addEventListener("click", function(e) {
+  slider.setAttribute("style", `--pageSlide: ${00}%`);
   headerNav.classList.remove("white-bg");
-})
+  menuButton();
+});
 
-
-buttons[1].addEventListener('click',function (e) {
-  slider.setAttribute('style', `--pageSlide: ${-100}%`)
+buttons[1].addEventListener("click", function(e) {
+  slider.setAttribute("style", `--pageSlide: ${-100}%`);
   headerNav.classList.add("white-bg");
-})
+  menuButton();
+});
 
-
-buttons[2].addEventListener('click',function (e) {
-  slider.setAttribute('style', `--pageSlide: ${-200}%`)
+buttons[2].addEventListener("click", function(e) {
+  slider.setAttribute("style", `--pageSlide: ${-200}%`);
   headerNav.classList.add("white-bg");
-})
+  menuButton();
+});
 
-
-buttons[3].addEventListener('click',function (e) {
-  slider.setAttribute('style', `--pageSlide: ${-300}%`)
+buttons[3].addEventListener("click", function(e) {
+  slider.setAttribute("style", `--pageSlide: ${-300}%`);
   headerNav.classList.add("white-bg");
-})
+  menuButton();
+});
 
-
-buttons[4].addEventListener('click',function (e) {
-  slider.setAttribute('style', `--pageSlide: ${-400}%`)
+buttons[4].addEventListener("click", function(e) {
+  slider.setAttribute("style", `--pageSlide: ${-400}%`);
   headerNav.classList.add("white-bg");
-})
+  menuButton();
+});
 
-
-buttons[5].addEventListener('click',function (e) {
-  slider.setAttribute('style', `--pageSlide: ${-500}%`)
+buttons[5].addEventListener("click", function(e) {
+  slider.setAttribute("style", `--pageSlide: ${-500}%`);
   headerNav.classList.add("white-bg");
-})
+  menuButton();
+});
 
-
-
-slideDown.addEventListener('click',function (e) {
-  slider.setAttribute('style', `--pageSlide: ${-100}%`)
+slideDown.addEventListener("click", function(e) {
+  slider.setAttribute("style", `--pageSlide: ${-100}%`);
   headerNav.classList.add("white-bg");
-})
-
+});
 
 ////////////setting border bottom on scrolll
 
@@ -93,70 +90,66 @@ const buttonContainer = [
   document.querySelector(".forth"),
   document.querySelector(".fifth"),
   document.querySelector(".sixth")
-]
-buttonContainer[0].classList.add('underline')
-window.addEventListener('scroll',function (e) {
+];
+buttonContainer[0].classList.add("underline");
+window.addEventListener("scroll", function(e) {
   const scrollLocation = e.currentTarget.scrollY;
 
-  if(scrollLocation < 590){
-    buttonContainer[0].classList.add('underline')
-    buttonContainer[1].classList.remove('underline')
-    buttonContainer[2].classList.remove('underline')
-    buttonContainer[3].classList.remove('underline')
-    buttonContainer[4].classList.remove('underline')
-    buttonContainer[5].classList.remove('special-contact')
+  if (scrollLocation < 590) {
+    buttonContainer[0].classList.add("underline");
+    buttonContainer[1].classList.remove("underline");
+    buttonContainer[2].classList.remove("underline");
+    buttonContainer[3].classList.remove("underline");
+    buttonContainer[4].classList.remove("underline");
+    buttonContainer[5].classList.remove("special-contact");
   }
 
-  if(scrollLocation >= 600){
-    buttonContainer[0].classList.remove('underline')
-    buttonContainer[1].classList.add('underline')
-    buttonContainer[2].classList.remove('underline')
-    buttonContainer[3].classList.remove('underline')
-    buttonContainer[4].classList.remove('underline')
-    buttonContainer[5].classList.remove('special-contact')
+  if (scrollLocation >= 600) {
+    buttonContainer[0].classList.remove("underline");
+    buttonContainer[1].classList.add("underline");
+    buttonContainer[2].classList.remove("underline");
+    buttonContainer[3].classList.remove("underline");
+    buttonContainer[4].classList.remove("underline");
+    buttonContainer[5].classList.remove("special-contact");
   }
 
-  if(scrollLocation >= 1300){
-    buttonContainer[0].classList.remove('underline')
-    buttonContainer[1].classList.remove('underline')
-    buttonContainer[2].classList.add('underline')
-    buttonContainer[3].classList.remove('underline')
-    buttonContainer[4].classList.remove('underline')
-    buttonContainer[5].classList.remove('special-contact')
+  if (scrollLocation >= 1300) {
+    buttonContainer[0].classList.remove("underline");
+    buttonContainer[1].classList.remove("underline");
+    buttonContainer[2].classList.add("underline");
+    buttonContainer[3].classList.remove("underline");
+    buttonContainer[4].classList.remove("underline");
+    buttonContainer[5].classList.remove("special-contact");
   }
 
-  if(scrollLocation >= 1900){
-    buttonContainer[0].classList.remove('underline')
-    buttonContainer[1].classList.remove('underline')
-    buttonContainer[2].classList.remove('underline')
-    buttonContainer[3].classList.add('underline')
-    buttonContainer[4].classList.remove('underline')
-    buttonContainer[5].classList.remove('special-contact')
-  }
- 
-console.log(scrollLocation)
-  if(scrollLocation >= 2500){
-    buttonContainer[0].classList.remove('underline')
-    buttonContainer[1].classList.remove('underline')
-    buttonContainer[2].classList.remove('underline')
-    buttonContainer[3].classList.remove('underline')
-    buttonContainer[4].classList.add('underline')
-    buttonContainer[5].classList.remove('special-contact')
+  if (scrollLocation >= 1900) {
+    buttonContainer[0].classList.remove("underline");
+    buttonContainer[1].classList.remove("underline");
+    buttonContainer[2].classList.remove("underline");
+    buttonContainer[3].classList.add("underline");
+    buttonContainer[4].classList.remove("underline");
+    buttonContainer[5].classList.remove("special-contact");
   }
 
-  if(scrollLocation >= 3100){
-    buttonContainer[0].classList.remove('underline')
-    buttonContainer[1].classList.remove('underline')
-    buttonContainer[2].classList.remove('underline')
-    buttonContainer[3].classList.remove('underline')
-    buttonContainer[4].classList.remove('underline')
-    buttonContainer[5].classList.add('special-contact')
+  console.log(scrollLocation);
+  if (scrollLocation >= 2500) {
+    buttonContainer[0].classList.remove("underline");
+    buttonContainer[1].classList.remove("underline");
+    buttonContainer[2].classList.remove("underline");
+    buttonContainer[3].classList.remove("underline");
+    buttonContainer[4].classList.add("underline");
+    buttonContainer[5].classList.remove("special-contact");
   }
- 
 
-})
-
-
+  if (scrollLocation >= 3100) {
+    buttonContainer[0].classList.remove("underline");
+    buttonContainer[1].classList.remove("underline");
+    buttonContainer[2].classList.remove("underline");
+    buttonContainer[3].classList.remove("underline");
+    buttonContainer[4].classList.remove("underline");
+    buttonContainer[5].classList.add("special-contact");
+  }
+});
 
 //////removing all classes on clicking the buttons
 
@@ -174,55 +167,54 @@ buttons.forEach(function (e) {
 
 */
 
-
 //////sliding images for portifolios
 
 function Slider(slider) {
   if (!(slider instanceof Element)) {
-    throw new Error('No slider passed in');
+    throw new Error("No slider passed in");
   }
   // create some variables for working iwth the slider
   let prev;
   let current;
   let next;
   // select the elements needed for the slider
-  const slides = slider.querySelector('.slides-tab');
-  const prevButton = document.querySelector('.goToPrev');
-  const nextButton = document.querySelector('.goToNext');
+  const slides = slider.querySelector(".slides-tab");
+  const prevButton = document.querySelector(".goToPrev");
+  const nextButton = document.querySelector(".goToNext");
 
-  console.log(prevButton,nextButton)
+  console.log(prevButton, nextButton);
   function startSlider() {
-    current = slider.querySelector('.current') || slides.firstElementChild;
+    current = slider.querySelector(".current") || slides.firstElementChild;
     prev = current.previousElementSibling || slides.lastElementChild;
     next = current.nextElementSibling || slides.firstElementChild;
   }
 
   function applyClasses() {
-    current.classList.add('current');
-    prev.classList.add('prev');
-    next.classList.add('next');
+    current.classList.add("current");
+    prev.classList.add("prev");
+    next.classList.add("next");
   }
 
   function mover(direction) {
     // first strip all the classes off the current slides
-    const classesToRemove = ['prev', 'current', 'next'];
+    const classesToRemove = ["prev", "current", "next"];
     prev.classList.remove(...classesToRemove);
     current.classList.remove(...classesToRemove);
     next.classList.remove(...classesToRemove);
-    if (direction === 'back') {   
+    if (direction === "back") {
       // make an new array of the new values, and destructure them over and into the prev, current and next variables
       [prev, current, next] = [
         // get the prev slide, if there is none, get the last slide from the entire slider for wrapping
         prev.previousElementSibling || slides.lastElementChild,
         prev,
-        current,
+        current
       ];
     } else {
       [prev, current, next] = [
         current,
         next,
         // get the next slide, or if it's at the end, loop around and grab the first slide
-        next.nextElementSibling || slides.firstElementChild,
+        next.nextElementSibling || slides.firstElementChild
       ];
     }
 
@@ -234,60 +226,58 @@ function Slider(slider) {
   applyClasses();
 
   // Event listeners
-  prevButton.addEventListener('click', () => mover('back'));
-  nextButton.addEventListener('click', mover);
+  prevButton.addEventListener("click", () => mover("back"));
+  nextButton.addEventListener("click", mover);
 }
 
-const mySlider = Slider(document.querySelector('.tab-sliding-img'));
-
-
+const mySlider = Slider(document.querySelector(".tab-sliding-img"));
 
 /////////////////sliding clients ///////////
 
 function client(slider) {
   if (!(slider instanceof Element)) {
-    throw new Error('No slider passed in');
+    throw new Error("No slider passed in");
   }
   // create some variables for working iwth the slider
   let prev;
   let current;
   let next;
   // select the elements needed for the slider
-  const slides = slider.querySelector('.slides-client');
+  const slides = slider.querySelector(".slides-client");
 
   function startSlider() {
-    current = slider.querySelector('.current') || slides.firstElementChild;
+    current = slider.querySelector(".current") || slides.firstElementChild;
     prev = current.previousElementSibling || slides.lastElementChild;
     next = current.nextElementSibling || slides.firstElementChild;
     console.log({ current, prev, next });
   }
 
   function applyClasses() {
-    current.classList.add('current');
-    prev.classList.add('prev');
-    next.classList.add('next');
+    current.classList.add("current");
+    prev.classList.add("prev");
+    next.classList.add("next");
   }
 
   function move(direction) {
     // first strip all the classes off the current slides
-    const classesToRemove = ['prev', 'current', 'next'];
+    const classesToRemove = ["prev", "current", "next"];
     prev.classList.remove(...classesToRemove);
     current.classList.remove(...classesToRemove);
     next.classList.remove(...classesToRemove);
-    if (direction === 'back') {
+    if (direction === "back") {
       // make an new array of the new values, and destructure them over and into the prev, current and next variables
       [prev, current, next] = [
         // get the prev slide, if there is none, get the last slide from the entire slider for wrapping
         prev.previousElementSibling || slides.lastElementChild,
         prev,
-        current,
+        current
       ];
     } else {
       [prev, current, next] = [
         current,
         next,
         // get the next slide, or if it's at the end, loop around and grab the first slide
-        next.nextElementSibling || slides.firstElementChild,
+        next.nextElementSibling || slides.firstElementChild
       ];
     }
 
@@ -299,30 +289,28 @@ function client(slider) {
   applyClasses();
 
   // Event listeners
- // nextButton.addEventListener('click', move);
+  // nextButton.addEventListener('click', move);
 
-
- /////////stop moving
+  /////////stop moving
   setInterval(function() {
-     move(); 
-  },3000)
+    move();
+  }, 3000);
 }
 
-const ClientSlider = client(document.querySelector('.slider-client'));
-
-
+const ClientSlider = client(document.querySelector(".slider-client"));
 
 ////////////////////menu button js
 
-const menu = document.querySelector('.menu')
+const menu = document.querySelector(".menu");
 
-const navigatorUp = document.querySelector('.navigator')
-const title = document.querySelector('.title')
-const navBtn = document.querySelector('.nav-btns')
+const navigatorUp = document.querySelector(".navigator");
+const title = document.querySelector(".title");
+const navBtn = document.querySelector(".nav-btns");
 
+function menuButton() {
+  navigatorUp.classList.toggle("navigator-up");
+  navBtn.classList.toggle("move-up");
+  title.classList.toggle("bring-back-navBar");
+}
 
-menu.addEventListener('click',function (params) {
-  navigatorUp.classList.toggle('navigator-up')
-  navBtn.classList.toggle('move-up')
-  title.classList.toggle('bring-back-navBar')
-})
+menu.addEventListener("click", menuButton);
