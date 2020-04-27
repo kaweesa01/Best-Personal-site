@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -278,15 +279,17 @@
                         Send me a note, and let's get started on your project today
                     </p>
                 </div>
-                <form name="contact" method="POST" data-netlify="true" action="">
+                <form  method="POST" action="form.php">
                     <input name="name" type="name" placeholder="Your Name">
                     <input name="email" type="email" placeholder="Your Email">
-                    <textarea name="text" id="" cols="30" rows="10"
+                    <textarea name="message" cols="30" rows="10"
                         placeholder="Tell Me more about your needs..."></textarea>
+                    <button type="submit" name="submit" class="send-btn">
+                        Send Message
+                    </button>
+
                 </form>
-                <div class="send-btn">
-                    Send Message
-                </div>
+
                 <div class="more-contacts">
                     <div class="location-svg">
                         <img src="./graphics/svgs/location.svg" alt="">
