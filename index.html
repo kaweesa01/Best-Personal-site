@@ -8,6 +8,7 @@
     <title> Kaweesa.com</title>
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" media="screen and (max-width:932px)" href="./style/mobile-view.css">
+    <script src="./script/jquery.min.js.download"></script>
 </head>
 
 
@@ -23,22 +24,22 @@
         <nav class="nav-container">
             <ul class="nav-btns move-up">
                 <div class=" bottom fst">
-                    <li class="nav-btn-list home">Home</li>
+                    <li class="nav-btn-list home"><a href="#page-1">Home</a> </li>
                 </div>
                 <div class=" bottom snd">
-                    <li class="nav-btn-lis about">About</li>
+                    <li class="nav-btn-list about"> <a href="#page-2"> About</a></li>
                 </div>
                 <div class=" bottom third">
-                    <li class="nav-btn-list service">Services</li>
+                    <li class="nav-btn-list service"> <a href="#page-3">Services</a></li>
                 </div>
                 <div class=" bottom forth">
-                    <li class="nav-btn-list portfolio">Portfolio</li>
+                    <li class="nav-btn-list portfolio"> <a href="#page-4">Portfolio</a></li>
                 </div>
                 <div class=" bottom fifth">
-                    <li class="nav-btn-list clients">Clients</li>
+                    <li class="nav-btn-list clients"> <a href="#page-5">Clients</a></li>
                 </div>
                 <div class="last sixth">
-                    <li class="nav-btn-list contact">Contact</li>
+                    <li class="nav-btn-list contact"> <a href="#page-6">Contact </a> </li>
                 </div>
             </ul>
         </nav>
@@ -72,7 +73,7 @@
                     </div>
                 </div>
                 <div class="slide-down">
-                    <img src="./graphics/svgs/angle-down.svg">
+                    <a href="#page-2"><img src="./graphics/svgs/angle-down.svg"></a>
                 </div>
             </section>
             <section class="slides" id="page-2">
@@ -115,7 +116,7 @@
                     </div>
 
                     <div class="discover">
-                        Discover My work
+                       <a href="#page-4">Discover My work</a> 
                     </div>
                 </div>
             </section>
@@ -279,7 +280,7 @@
                         Send me a note, and let's get started on your project today
                     </p>
                 </div>
-                <form  method="POST" action="form.php">
+                <form  method="POST" action="./form.php">
                     <input name="name" type="name" placeholder="Your Name">
                     <input name="email" type="email" placeholder="Your Email">
                     <textarea name="message" cols="30" rows="10"
@@ -331,6 +332,22 @@
         </div>
     </main>
 </body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+
+            var target = this.hash,
+                $target = $(target);
+
+            $('html,body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 600, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+    });
+</script>
 <script src="./script/script.js"></script>
 
 </html>

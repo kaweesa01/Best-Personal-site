@@ -1,11 +1,15 @@
 const headerNav = document.querySelector(".navigator");
 
+const lastBg = document.querySelector(".sixth a");
+
 window.addEventListener("scroll", function(e) {
   const scrollLocation = e.currentTarget.scrollY;
   if (scrollLocation >= 99) {
     headerNav.classList.add("white-bg");
+    lastBg.classList.add("last-color");
   } else {
     headerNav.classList.remove("white-bg");
+    lastBg.classList.remove("last-color");
   }
 });
 
@@ -27,7 +31,7 @@ setInterval(() => {
 }, 2000);
 
 ////////////siding pages/////////////////////
-
+/*
 const slider = document.querySelector(".slider");
 const slideDown = document.querySelector(".slide-down");
 
@@ -79,7 +83,7 @@ buttons[5].addEventListener("click", function(e) {
 slideDown.addEventListener("click", function(e) {
   slider.setAttribute("style", `--pageSlide: ${-100}%`);
   headerNav.classList.add("white-bg");
-});
+});*/
 
 ////////////setting border bottom on scrolll
 

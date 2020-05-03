@@ -128,6 +128,13 @@
     display: flex;
     justify-content: center;
     align-items: center; }
+    .bottom a{
+      text-decoration: none;
+      font-family: Nunito-Black;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: black;
+    }
   .nav-btns .bottom:hover {
     border-bottom: 2px solid black;
     border-radius: 5px; }
@@ -143,10 +150,22 @@
     align-items: center; }
   .nav-btns .last:hover {
     background-color: black;
-    color: whitesmoke; }
+    color: whitesmoke !important; }
+
+   .last a{
+      text-decoration: none;
+      font-family: Nunito-Black;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: white;
+    }
 
 .white-bg {
   background-color: white; }
+
+  .last-color{
+    color: black !important;
+  }
 
 .underline {
   border-bottom: 2px solid black;
@@ -278,6 +297,10 @@
   cursor: pointer;
   width: 30%; }
 
+  .discover a{
+    text-decoration: none;
+    color: inherit;
+  }
 .discover:hover {
   background-color: whitesmoke;
   color: #860202; }
