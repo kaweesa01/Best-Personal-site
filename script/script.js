@@ -31,7 +31,7 @@ setInterval(() => {
 }, 2000);
 
 ////////////siding pages/////////////////////
-/*
+
 const slider = document.querySelector(".slider");
 const slideDown = document.querySelector(".slide-down");
 
@@ -45,45 +45,35 @@ const buttons = [
 ];
 
 buttons[0].addEventListener("click", function(e) {
-  slider.setAttribute("style", `--pageSlide: ${00}%`);
   headerNav.classList.remove("white-bg");
   menuButton();
 });
 
 buttons[1].addEventListener("click", function(e) {
-  slider.setAttribute("style", `--pageSlide: ${-100}%`);
   headerNav.classList.add("white-bg");
   menuButton();
 });
 
 buttons[2].addEventListener("click", function(e) {
-  slider.setAttribute("style", `--pageSlide: ${-200}%`);
   headerNav.classList.add("white-bg");
   menuButton();
 });
 
 buttons[3].addEventListener("click", function(e) {
-  slider.setAttribute("style", `--pageSlide: ${-300}%`);
   headerNav.classList.add("white-bg");
   menuButton();
 });
 
 buttons[4].addEventListener("click", function(e) {
-  slider.setAttribute("style", `--pageSlide: ${-400}%`);
   headerNav.classList.add("white-bg");
   menuButton();
 });
 
 buttons[5].addEventListener("click", function(e) {
-  slider.setAttribute("style", `--pageSlide: ${-500}%`);
   headerNav.classList.add("white-bg");
   menuButton();
 });
 
-slideDown.addEventListener("click", function(e) {
-  slider.setAttribute("style", `--pageSlide: ${-100}%`);
-  headerNav.classList.add("white-bg");
-});*/
 
 ////////////setting border bottom on scrolll
 
