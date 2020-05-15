@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,21 +7,25 @@
     <title> Kaweesa.com</title>
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" media="screen and (max-width:932px)" href="./style/mobile-view.css">
+    <link rel="stylesheet" href="dist/aos.css">
     <script src="./script/jquery.min.js.download"></script>
+
 </head>
 
 
 <body>
 
-    <header class="navigator navigator-up">
-        <div class="title bring-back-navBar">
-            Kaweesa
+    <header class="navigator reset-header-height">
+        <div class="bg-colorling">
+            <div class="title">
+                Kaweesa
 
-            <img class="menu" src="./graphics/svgs/icons8-menu (1).svg" alt="">
+                <img class="menu" src="./graphics/svgs/menu.svg" alt="">
+            </div>
         </div>
 
-        <nav class="nav-container">
-            <ul class="nav-btns move-up">
+        <nav class="nav-container reset-NavContainer-height">
+            <ul class="nav-btns">
                 <div class=" bottom fst">
                     <li class="nav-btn-list home"><a href="#page-1">Home</a> </li>
                 </div>
@@ -77,10 +80,10 @@
                 </div>
             </section>
             <section class="slides" id="page-2">
-                <div class="profile-pic">
+                <div class="profile-pic" data-aos="fade-down">
                     <img src="./graphics/images/FB_IMG_1587664379829.jpg" alt="">
                 </div>
-                <div class="about-conatiner">
+                <div class="about-conatiner" data-aos="fade-up">
                     <div class="about-title">About Me</div>
                     <h2>Hello! <span class="name">l'm Kaweesa Moses</span></h2>
                     <p class="about-info">
@@ -116,13 +119,13 @@
                     </div>
 
                     <div class="discover">
-                       <a href="#page-4">Discover My work</a> 
+                        <a href="#page-4">Discover My work</a>
                     </div>
                 </div>
             </section>
             <section class="slides" id="page-3">
                 <div class="services-container">
-                    <h1>My services</h1>
+                    <h1 data-aos="fade-down" data-aos-offset="200">My services</h1>
                     <div class="line-below"></div>
                     <p class="services-info">
                         How I can take your next project to new heights! Thousands of clients have
@@ -132,7 +135,7 @@
                     </p>
                 </div>
                 <div class="services-svgs">
-                    <div class="programmer">
+                    <div class="programmer" data-aos="fade-up" data-aos-offset="200">
                         <div class="svgs">
                             <img src="./graphics/svgs/coding.svg" alt="">
                             <h1>Computer programming</h1>
@@ -140,7 +143,7 @@
                         </div>
                     </div>
 
-                    <div class="architect">
+                    <div class="architect" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="200">
                         <div class="svgs">
                             <img src="./graphics/svgs/architecture.svg" alt="">
                             <h1>Architect</h1>
@@ -148,7 +151,7 @@
                         </div>
                     </div>
 
-                    <div class="web-designer">
+                    <div class="web-designer" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="200">
                         <div class="svgs">
                             <img src="./graphics/svgs/ux.svg" alt="">
                             <h1>Web site designer</h1>
@@ -157,7 +160,7 @@
                     </div>
                 </div>
             </section>
-            <section class="slides" id="page-4">
+            <section class="slides" id="page-4" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="200">
                 <div class="services-container-images">
                     <h1>My Portfolios</h1>
                     <div class="line-below-image"></div>
@@ -203,7 +206,7 @@
             <section class="slides" id="page-5">
 
                 <div class="services-container-images">
-                    <h1>My Clients</h1>
+                    <h1 data-aos="fade-down" data-aos-offset="200">My Clients</h1>
                     <div class="line-below-image"></div>
                     <p class="services-info-image">
                         See what my happy clients say about me. I'm proud to have my clients
@@ -211,7 +214,7 @@
                 </div>
 
 
-                <div class="sliding-Clients">
+                <div class="sliding-Clients" data-aos="zoom-in-down" data-aos-offset="200">
                     <div class="slider-client">
                         <div class="slides-client">
                             <div class="slide-client">
@@ -274,38 +277,41 @@
             </section>
             <section class="slides" id="page-6">
                 <div class="services-container-images contact-height">
-                    <h1>Contact Me</h1>
+                    <h1 data-aos="fade-down" data-aos-offset="200">Contact Me</h1>
                     <div class="line-below-image"></div>
                     <p class="services-info-image">
                         Send me a note, and let's get started on your project today
                     </p>
                 </div>
-                <form  method="POST" action="./form.php">
-                    <input name="name" type="name" placeholder="Your Name">
-                    <input name="email" type="email" placeholder="Your Email">
-                    <textarea name="message" cols="30" rows="10"
+                <form method="POST" action="./form.php">
+                    <input data-aos="fade-down-left" data-aos-offset="200" name="name" type="name"
+                        placeholder="Your Name">
+                    <input data-aos="fade-down-right" data-aos-offset="200" name="email" type="email"
+                        placeholder="Your Email">
+                    <textarea data-aos="flip-right" data-aos-offset="200" name="message" cols="30" rows="10"
                         placeholder="Tell Me more about your needs..."></textarea>
-                    <button type="submit" name="submit" class="send-btn">
+                    <button data-aos="fade-up" data-aos-duration="2000" data-aos-offset="200" type="submit"
+                        name="submit" class="send-btn">
                         Send Message
                     </button>
 
                 </form>
 
                 <div class="more-contacts">
-                    <div class="location-svg">
+                    <div class="location-svg" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="200">
                         <img src="./graphics/svgs/location.svg" alt="">
                         <h2>VISIT ME</h2>
                         <h3>Kampala, Uganda, Katwe II,</h3>
                         <h3> Byuma Zone</h3>
                     </div>
 
-                    <div class="call-svgs">
+                    <div class="call-svgs" data-aos="fade-up" data-aos-duration="4000" data-aos-offset="200">
                         <img src="./graphics/svgs/telephone.svg" alt="">
                         <h2>CALL ME NOW</h2>
                         <h3>+(256)-752226438</h3>
                     </div>
 
-                    <div class="email-svg">
+                    <div class="email-svg" data-aos="fade-up" data-aos-duration="5000" data-aos-offset="200">
                         <img src="./graphics/svgs/email.svg" alt="">
                         <h2>FOR INQUIRIES</h2>
                         <h3><a href="mailto:kawesa.moses02@gmail.com">Kaweesa musa</a></h3>
@@ -349,5 +355,12 @@
     });
 </script>
 <script src="./script/script.js"></script>
+<script src="dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+</script>
 
 </html>

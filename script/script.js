@@ -145,22 +145,6 @@ window.addEventListener("scroll", function(e) {
   }
 });
 
-//////removing all classes on clicking the buttons
-
-/*
-buttons.forEach(function (e) {
-   e.addEventListener('click',function (e) {
-    buttonContainer[0].classList.remove('underline')
-    buttonContainer[1].classList.remove('underline')
-    buttonContainer[2].classList.remove('underline')
-    buttonContainer[3].classList.remove('underline')
-    buttonContainer[4].classList.remove('underline')
-    buttonContainer[5].classList.remove('special-contact')
-   })
-})
-
-*/
-
 //////sliding images for portifolios
 
 function Slider(slider) {
@@ -297,14 +281,13 @@ const ClientSlider = client(document.querySelector(".slider-client"));
 
 const menu = document.querySelector(".menu");
 
-const navigatorUp = document.querySelector(".navigator");
-const title = document.querySelector(".title");
+const navigatorReset = document.querySelector(".navigator");
+const navContainer = document.querySelector(".nav-container");
 const navBtn = document.querySelector(".nav-btns");
 
 function menuButton() {
-  navigatorUp.classList.toggle("navigator-up");
-  navBtn.classList.toggle("move-up");
-  title.classList.toggle("bring-back-navBar");
+  navContainer.classList.toggle('reset-NavContainer-height')
+  navigatorReset.classList.toggle('reset-header-height')
 }
 
 menu.addEventListener("click", menuButton);
